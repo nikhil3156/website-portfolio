@@ -387,11 +387,11 @@ const ProjectsSection = () => {
     const projects = [
         {
             id: 1,
-            title: "Spotify Song Recommendation System 🎵",
-            description: "Recommends songs based on user preferences using clustering and cosine similarity",
-            image: "🎵",
-            demoUrl: "https://nikhil-spotify-recommender.streamlit.app",
-            githubUrl: "https://github.com/nikhil/spotify-recommender",
+            title: "AI Resume Screening And Job Recommendation 📄 ",
+            description: "this model will screening the resume predict the category and give the job recommendation ",
+            image: "📄",
+            demoUrl: "https://ai-resume-screening-and-job-recommendation-bhzndpqm2lxm6zyxkvz.streamlit.app/",
+            githubUrl: "https://github.com/nikhil3156/AI-Resume-Screening-And-Job-Recommendation",
             tags: ["Python", "Pandas", "Scikit-Learn", "Streamlit"]
         },
         {
@@ -399,8 +399,8 @@ const ProjectsSection = () => {
             title: "Credit Card Fraud Detection 💳",
             description: "Predicts fraudulent transactions using Logistic Regression and Random Forest",
             image: "💳",
-            demoUrl: "https://nikhil-fraud-detection.streamlit.app",
-            githubUrl: "https://github.com/nikhil/fraud-detection",
+            demoUrl: "https://credit-card-fraud-detection-n8qt4b753iwmwixoqrsh8m.streamlit.app/",
+            githubUrl: "https://github.com/nikhil3156/credit-card-fraud-detection",
             tags: ["Machine Learning", "Classification", "Python", "Streamlit"]
         },
         {
@@ -409,7 +409,7 @@ const ProjectsSection = () => {
             description: "Classifies messages as spam or ham using NLP and TF-IDF",
             image: "📱",
             demoUrl: "https://spam-fraud-detection-ekreceg6c97z57uzdntfqz.streamlit.app",
-            githubUrl: "https://github.com/nikhil/sms-classifier",
+            githubUrl: "https://github.com/nikhil3156/spam-fraud-detection",
             tags: ["NLP", "TF-IDF", "Python", "Text Processing"]
         },
         {
@@ -418,8 +418,17 @@ const ProjectsSection = () => {
             description: "Detects plant diseases using CNN (Deep Learning)",
             image: "🌿",
             demoUrl: "https://nikhil-plant-disease.streamlit.app",
-            githubUrl: "https://github.com/nikhil/plant-disease",
+            githubUrl: "https://github.com/nikhil3156/potato-crop-disease-detection-model",
             tags: ["Deep Learning", "CNN", "TensorFlow", "Computer Vision"]
+        },
+         {
+            id: 5,
+            title: "Spotify Song Recommendation System 🎵",
+            description: "Recommends songs based on user preferences using clustering and cosine similarity",
+            image: "🎵",
+            demoUrl: "https://nikhil-spotify-recommender.streamlit.app",
+            githubUrl: "https://github.com/nikhil3156/music-recommendation-systemm",
+            tags: ["Python", "Pandas", "Scikit-Learn", "Streamlit"]
         }
     ];
     
@@ -562,10 +571,10 @@ const LiveModelsSection = () => {
     const liveModels = [
         {
             id: 1,
-            title: "🎵 Music Recommender",
-            description: "Get personalized music recommendations based on your favorite tracks",
+            title: "📄 AI Resume Screening and Job Recommendation ",
+            description: "this model will screening the resume predict the category and give the job recommendation",
             embedUrl: "https://music-recommendation-systemm-shm5svwkm9ew6ty72p7ydu.streamlit.app",
-            instructions: "Enter your favorite songs and get AI-powered recommendations!"
+            instructions: "Enter your resume pdf file her get category and job recommendation"
         },
         {
             id: 2,
@@ -580,6 +589,13 @@ const LiveModelsSection = () => {
             description: "Classify text messages as spam or legitimate using NLP",
             embedUrl: "https://sms-fraud-detection-n8qt4b753iwmwixoqrsh8m.streamlit.app",
             instructions: "Type any message to see if it's classified as spam or ham"
+        },
+         {
+            id: 4,
+            title: "🎵 Music Recommender",
+            description: "Get personalized music recommendations based on your favorite tracks",
+            embedUrl: "https://music-recommendation-systemm-shm5svwkm9ew6ty72p7ydu.streamlit.app",
+            instructions: "Enter your favorite songs and get AI-powered recommendations!"
         }
     ];
     
@@ -734,44 +750,7 @@ const LiveModelsSection = () => {
             );
         };
         
-        // Resume Section Component
-        const ResumeSection = () => {
-            return (
-                <section id="resume" className="py-20 bg-white">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <div className="scroll-animate">
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                                My <span className="gradient-text">Resume</span>
-                            </h2>
-                            <p className="text-xl text-gray-600 mb-12">
-                                Download my complete resume to learn more about my experience and qualifications
-                            </p>
-                            
-                            <div className="bg-gray-50 rounded-xl p-12 mb-8">
-                                <div className="text-6xl mb-6">📄</div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">Professional Resume</h3>
-                                <p className="text-gray-600 mb-8">
-                                    Complete overview of my data science journey, projects, and technical expertise
-                                </p>
-                                
-                                <button
-                                    onClick={() => window.open('#', '_blank')}
-                                    className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105"
-                                >
-                                    <i className="fas fa-download mr-2"></i>
-                                    Download Resume PDF
-                                </button>
-                            </div>
-                            
-                            <div className="text-sm text-gray-500">
-                                Last updated: December 2024
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            );
-        };
-        
+       
         // Contact Section Component
         const ContactSection = () => {
             const [formData, setFormData] = useState({
@@ -873,7 +852,7 @@ const LiveModelsSection = () => {
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold">Email</h4>
-                                                <p className="text-purple-100">nikhil.pratap@email.com</p>
+                                                <p className="text-purple-100">nikhilpratap413@email.com</p>
                                             </div>
                                         </div>
                                         
@@ -987,4 +966,5 @@ const LiveModelsSection = () => {
         ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
+
 </html>   
